@@ -1,0 +1,17 @@
+{% extends "layout.html" %} {% block title %} Cartera {% endblock %} {% block
+main %}
+<h2>Añadir Fondos</h2>
+<form action="{{ url_for('wallet') }}" method="post">
+  <div class="form-group">
+    <label for="amount">Cantidad:</label>
+    <input
+      type="text"
+      class="form-control"
+      id="amount"
+      name="amount"
+      placeholder="Enter amount"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Añadir Fondos</button>
+</form>
+{% endblock %}
